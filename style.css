@@ -4,15 +4,16 @@
 }
 
 .masked-image {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
-  mask-image: url("oval-cutout.svg");
-  mask-size: 600px;
+  mask-image: url("./hc-1-1-mask.svg");
+  mask-size: 500px;
   mask-position: center;
   mask-repeat: no-repeat;
-  -webkit-mask-size: 600px;
-  -webkit-mask-image: url("oval-cutout.svg");
+  -webkit-mask-size: 500px;
+  -webkit-mask-image: url("./hc-1-1-mask.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
 }
+
