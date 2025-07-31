@@ -1,0 +1,152 @@
+    <div class="animation3-circle-container">
+      <div class="animation3-center-object">
+        <img
+          src="/wp-content/uploads/2025/07/rt-center-3.webp"
+          alt="center"
+        />
+      </div>
+      <div class="animation3-orbit">
+        <div class="animation3-item" style="--l: 0">
+          <img
+            
+            src="/wp-content/uploads/2025/07/SageMaker-300x154.webp"
+            style="height: 50px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 1">
+          <img
+            src="/wp-content/uploads/2025/07/azure-sql-database-logo-png_seeklogo-434046-300x300.png"
+            alt="icon"
+            style="height: 40px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 2">
+          <img
+            src="/wp-content/uploads/2025/07/azure-sa-300x169.jpeg"
+            style="height: 30px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 3">
+          <img
+            src="/wp-content/uploads/2025/07/Tableau-Emblem-300x169.png"
+            alt="icon"
+            style="height: 30px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 4">
+          <img
+            src="/wp-content/uploads/2025/07/snowflake_logo_icon_168808-300x150.png"
+            alt="icon"
+            style="height: 40px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 5">
+          <img
+            
+            src="/wp-content/uploads/2025/07/Python-Logo-4.svg"
+            alt="icon"
+            style="height: 50px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 6">
+          <img
+            src="/wp-content/uploads/2025/07/power-bi-logo-microsoft-vector-eps-free-download-icons-power-bi-logo-microsoft-vector-eps-free-download-icons-m2i8K9A0H7d3G6b1-1-removebg-preview-300x88.png"
+            alt="icon"
+            style="height: 25px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 7">
+          <img
+            src="/wp-content/uploads/2025/07/google-bigquery-logo-1-300x169.webp"
+            alt="icon"
+            style="height: 40px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 8">
+          <img
+            src="/wp-content/uploads/2025/07/apache_superset-300x288.png"
+            alt="icon"
+            style="height: 40px"
+          />
+        </div>
+        <div class="animation3-item" style="--l: 9">
+          <img
+            src="/wp-content/uploads/2025/07/llm-150x150.webp"
+            alt="icon"
+            style="height: 80px"
+          />
+        </div>
+      </div>
+    </div>
+    
+    <style>
+    
+/* ..........common styles................ */
+
+
+.animation3-circle-container {
+  /*margin: 40px;*/
+  position: relative;
+  width: 550px;
+  height: 550px;
+  min-height: 550px;
+  overflow: visible;
+  margin-top: -30px;
+}
+
+.animation3-center-object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  z-index: 2;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation3-center-object img {
+  width: 200px;
+}
+
+.animation3-orbit {
+  z-index: 20;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.animation3-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 10px 0;
+  transform: translate(-50%, -50%) rotate(calc(360deg / 10 * var(--l)))
+    translate(200px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ..................keyframes..................... */
+
+@keyframes zoom-in-out-l {
+  0%,
+  100% {
+    transform:rotate(calc(-360deg / 10* var(--l))) scale(1);
+  }
+  50% {
+    transform:rotate(calc(-360deg / 10 * var(--l))) scale(1.3);
+  }
+}
+
+
+.animation3-item > img {
+  height: 45px;
+  animation: zoom-in-out-l 2s ease-in-out infinite;
+}
+    
+    </style>

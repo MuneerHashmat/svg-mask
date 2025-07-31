@@ -1,3 +1,9 @@
+body{
+  background-color: black;
+  width: 90%;
+  height: 100%;
+}
+
 .cutout-container {
   position: relative;
   overflow: hidden;
@@ -16,4 +22,27 @@
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
 }
+
+@keyframes spread {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px); /* move slightly to right */
+  }
+}
+
+#rect1,
+#rect1-8,
+#rect1-1,
+#rect1-2,
+#rect1-23,
+#rect1-85,
+#rect1-9,
+#rect1-4,
+#rect1-3 {
+  animation: spread 2s infinite ease-in-out alternate;
+}
+
+
 
